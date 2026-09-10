@@ -18,7 +18,7 @@ interface FormData {
 }
 
 export default function Home() {
-  const [showSuccess, setShowSuccess] = useState(true);
+  const [showSuccess, setShowSuccess] = useState(false);
   const { register, handleSubmit, formState, reset } = useForm<FormData>({
     mode: "onChange",
   });
